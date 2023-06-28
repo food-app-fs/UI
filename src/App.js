@@ -5,7 +5,7 @@ import Home from './page/Home';
 import 'bootstrap/dist/css/bootstrap.css';
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import Detail from './page/Detailpage';
-import Cart from './page/Cart';
+import WrappedCart from './page/Cart';
 const App =()=>{
   return (
 
@@ -15,7 +15,7 @@ const App =()=>{
           <Route index element={<Login />} />
           <Route path="home" element={<Home />} />
           <Route path="detail" element={<Detail/>} />
-          <Route path="cart" element={<Cart/>} />
+          <Route path="cart" element={<WrappedCart/>} />
         </Route>
       </Routes>
     </Router>
